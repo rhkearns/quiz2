@@ -1,38 +1,30 @@
-.App {
-  text-align: center;
+html {
+  box-sizing: border-box;
+  overflow-x: hidden;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+ /* The Universal Selector */
+ *, /* All elements*/
+ *::before, /* All ::before pseudo-elements */
+ *::after { /* All ::after pseudo-elements */
+  /* height & width will now include border & padding by default
+      but can be over-ridden as needed */
+  box-sizing: inherit;
   }
-}
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+/* resets font size to be 62.5% of the user preference - 
+    in most browser configurations this will be 10px */
+:root {
+  font-size: 62.5%;
   }
-  to {
-    transform: rotate(360deg);
+
+  body {
+    background: rgb(249,249,249);
+    background: linear-gradient(90deg, rgba(249,249,249,1) 0%, rgba(176,176,176,1) 98%);
+    color: rgb(16, 27, 27);
+    /* Use a system font, if none are available use an available sans-sarif font */
+    font-family: "Cinzel", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+      Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+    margin: 0%;
+    padding-bottom: 80px;
   }
-}

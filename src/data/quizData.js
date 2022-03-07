@@ -1,4 +1,4 @@
-const hpQuestions = [
+const quizData = [
 	{
 		catTitle: 'Harry Potter',
 		catImage: 'hpImage',
@@ -91,5 +91,5 @@ const hpQuestions = [
 ];
 
 export {
-  hpQuestions
+  quizData
 }  
