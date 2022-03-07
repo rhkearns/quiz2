@@ -1,8 +1,8 @@
 import React from 'react';
 
-const CategoryCard = () => {
+const CategoryCard = ({title, image}) => {
   return (
-    <h1>CategoryCard</h1>
+    <h1>{title}</h1>
   )
 }
 
