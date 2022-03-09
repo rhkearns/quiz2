@@ -1,8 +1,14 @@
 import React from 'react';
+import Card from 'react-bootstrap/Card'
 
 const CategoryCard = ({title, image}) => {
   return (
-    <h1>{title}</h1>
+    <Card >
+      <Card.Img />
+      <Card.Body>
+        <Card.Title>{title}</Card.Title>
+      </Card.Body>
+    </Card>
   )
 }
 
