@@ -3,9 +3,9 @@ import { useParams } from 'react-router-dom';
 
 const StartPage = () => {
   const [category, setCategory] = useState('')
-  const { path } = useParams()
-  // console.log(path);
-  
+  const { id } = useParams()
+  console.log(id);
+
   useEffect(() => {
 
   })
