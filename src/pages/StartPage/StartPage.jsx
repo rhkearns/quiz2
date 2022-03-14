@@ -16,7 +16,7 @@ const StartPage = () => {
 
   return (
     <>
-      <h1>Start Page</h1>
+      <h1>{category.title}</h1>
     </>
   )
 }

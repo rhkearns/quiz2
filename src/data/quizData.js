@@ -1,8 +1,8 @@
 const quizData = [
 	{
-		catTitle: 'Harry Potter',
-		catImage: 'hpImage',
-		catCardClass: 'hpCard',
+		title: 'Harry Potter',
+		image: 'hpImage',
+		cardClass: 'hpCard',
 		id: 'harrypotter',
 		questions: [
 			{
@@ -91,9 +91,9 @@ const quizData = [
 		],
 	},
 	{
-		catTitle: 'Star Wars',
-		catImage: 'swImage',
-		catCardClass: 'swCard',
+		title: 'Star Wars',
+		image: 'swImage',
+		cardClass: 'swCard',
 		id: 'starwars',
 		questions: [
 			{
@@ -171,9 +171,9 @@ const quizData = [
 		],
 	},
 	{
-		catTitle: 'Lord of the Rings',
-		catImage: 'lotrImage',
-		catCardClass: 'lotrCard',
+		title: 'Lord of the Rings',
+		image: 'lotrImage',
+		cardClass: 'lotrCard',
 		id: 'lordoftherings',
 		questions: [
 			{
@@ -264,9 +264,9 @@ const quizData = [
 		],
 	},
 	{
-		catTitle: 'Game of Thrones',
-		catImage: 'gotImage',
-		catCardClass: 'gotCard',
+		title: 'Game of Thrones',
+		image: 'gotImage',
+		cardClass: 'gotCard',
 		id: 'gameofthrones',
 		questions: [
 			{
@@ -360,9 +360,9 @@ const quizData = [
 		],
 	},
 	{
-		catTitle: 'Marvel Cinematic Universe',
-		catImage: 'mcuImage',
-		catCardClass: 'mcuCard',
+		title: 'Marvel Cinematic Universe',
+		image: 'mcuImage',
+		cardClass: 'mcuCard',
 		id: 'mcu',
 		questions: [
 			{
@@ -466,9 +466,9 @@ const quizData = [
 		],
 	},
 	{
-		catTitle: 'Dungeons & Dragons',
-		catImage: 'ddImage',
-		catCardClass: 'ddCard',
+		title: 'Dungeons & Dragons',
+		image: 'ddImage',
+		cardClass: 'ddCard',
 		id: 'd&d',
 		questions: [
 			{
