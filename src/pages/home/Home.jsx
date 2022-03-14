@@ -17,7 +17,7 @@ const Home = () => {
 			</div>
 			<div id="categories">
 				{quizData.map(category => (
-					<Link key={category.catPath} to={`/${category.catPath}`}>
+					<Link key={category.id} to={`/${category.id}`}>
 						<CategoryCard
 							title={category.catTitle}
 							image={category.catImage}
