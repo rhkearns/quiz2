@@ -3,6 +3,7 @@ const quizData = [
 		catTitle: 'Harry Potter',
 		catImage: 'hpImage',
 		catCardClass: 'hpCard',
+		catPath: 'harrypotter',
 		questions: [
 			{
 				question: "What do Hermione's parents do for a living?",
@@ -93,6 +94,7 @@ const quizData = [
 		catTitle: 'Star Wars',
 		catImage: 'swImage',
 		catCardClass: 'swCard',
+		catPath: 'starwars',
 		questions: [
 			{
 				question: 'What model is the Millennium Falcon?',
@@ -172,6 +174,7 @@ const quizData = [
 		catTitle: 'Lord of the Rings',
 		catImage: 'lotrImage',
 		catCardClass: 'lotrCard',
+		catPath: 'lordoftherings',
 		questions: [
 			{
 				question: 'What is the name of the innkeep at The Prancing Pony?',
@@ -264,6 +267,7 @@ const quizData = [
 		catTitle: 'Game of Thrones',
 		catImage: 'gotImage',
 		catCardClass: 'gotCard',
+		catPath: 'gameofthrones',
 		questions: [
 			{
 				question: "Who was Jon Snow's father?",
@@ -359,6 +363,7 @@ const quizData = [
 		catTitle: 'Marvel Cinematic Universe',
 		catImage: 'mcuImage',
 		catCardClass: 'mcuCard',
+		catPath: 'mcu',
 		questions: [
 			{
 				question: 'Which high school does Peter Parker attend?',
@@ -464,6 +469,7 @@ const quizData = [
 		catTitle: 'Dungeons & Dragons',
 		catImage: 'ddImage',
 		catCardClass: 'ddCard',
+		catPath: 'd&d',
 		questions: [
 			{
 				question: 'When can monsters use Legendary Actions?',

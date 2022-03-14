@@ -9,6 +9,7 @@ const App = () => {
 			<NavBar />
 			<Routes>
 				<Route path="/" element={<Home />} />
+				<Route path='/:catPath' />
 			</Routes>
 		</div>
 	);
