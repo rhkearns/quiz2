@@ -5,12 +5,23 @@ import QuestionBlock from '../../components/QuestionBlock/QuestionBlock';
 
 const QuestionPage = () => {
 	const [category, setCategory] = useState({});
-	const { id } = useParams();
+  const { id } = useParams();
+  const [correctAnswers, setCorrectAnswers] = useState([])
+  const [guesses, setGuesses] = useState([]);
+
+  const handleSelectAnswer = (selection, idx) => {
+
+  }
 
 	useEffect(() => {
 		const selectedCategory = quizData.find(category => category.id === id);
-		setCategory(selectedCategory);
+    setCategory(selectedCategory);
+    setCorrectAnswers(selectedCategory.questions.map(q => {
+      return q.correctAns
+    }))
 	}, []);
+
+console.log(correctAnswers);
 
 	return (
 		<>

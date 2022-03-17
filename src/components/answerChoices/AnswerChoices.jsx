@@ -6,7 +6,7 @@ const AnswerChoices = ({ choices }) => {
 		<>
 			{choices.map(choice => (
 				<div className='choice-block'>
-					<p className="choice">{choice}</p>
+          <p className="choice" id={choices.indexOf(choice) }>{choice}</p>
 				</div>
 			))}
 		</>
