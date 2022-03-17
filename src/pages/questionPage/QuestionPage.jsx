@@ -29,7 +29,8 @@ const QuestionPage = () => {
 			<div className="questions">
 				{category.questions?.map(question => (
 					<QuestionBlock
-						question={question}
+            question={question}
+            key={question.qIndex}
 						handleCheckAnswers={handleCheckAnswers}
 					/>
 				))}
