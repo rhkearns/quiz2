@@ -197,6 +197,7 @@ const quizData = [
 		id: 'lordoftherings',
 		questions: [
 			{
+				qIndex: 0,
 				question: 'What is the name of the innkeep at The Prancing Pony?',
 				correctAns: 'Barliman Butterbur',
 				multChoice: [
@@ -208,6 +209,7 @@ const quizData = [
 				],
 			},
 			{
+				qIndex: 1,
 				question: "What was the name of Sauron's fortress in Mordor?",
 				correctAns: 'Barad-Dur',
 				multChoice: [
@@ -219,6 +221,7 @@ const quizData = [
 				],
 			},
 			{
+				qIndex: 2,
 				question:
 					"Who wrote the poem 'All that is gold does not glitter, Not all those who wander are lost'?",
 				correctAns: 'Bilbo Baggins',
@@ -231,28 +234,33 @@ const quizData = [
 				],
 			},
 			{
+				qIndex: 3,
 				question:
 					'What is the name of the Great River that the Fellowship rows down after leaving Lothlorien?',
 				correctAns: 'Anduin',
 				multChoice: ['Celduin', 'Isen', 'Bruinen', 'Anduin', 'Entwash'],
 			},
 			{
+				qIndex: 4,
 				question:
 					"Who cut the One Ring from Sauron's hand during the Battle of the Last Alliance?",
 				correctAns: 'Isildur',
 				multChoice: ['Elendil', 'Arathorn', 'Beren', 'Isildur', 'Elrond'],
 			},
 			{
+				qIndex: 5,
 				question: 'Who is Shelob the last child of?',
 				correctAns: 'Ungoliant',
 				multChoice: ['Melkor', 'Yavanna', 'Melian', 'Nienna', 'Ungoliant'],
 			},
 			{
+				qIndex: 6,
 				question: "What is the name of Gandalf's sword?",
 				correctAns: 'Glamdring',
 				multChoice: ['Anduril', 'Orcrist', 'Glamdring', 'Gurthang', 'Herugrim'],
 			},
 			{
+				qIndex: 7,
 				question: "What is the date of Bilbo's and Frodo's birthday?",
 				correctAns: 'September 22nd',
 				multChoice: [
@@ -264,6 +272,7 @@ const quizData = [
 				],
 			},
 			{
+				qIndex: 8,
 				question:
 					'At the end of Return of the King, who bore the Three Elvish Rings?',
 				correctAns: 'Elrond, Galadriel, and Gandalf',
@@ -276,6 +285,7 @@ const quizData = [
 				],
 			},
 			{
+				qIndex: 9,
 				question:
 					'How old is Frodo when he sets out from the Shire with the Ring?',
 				correctAns: '50',
@@ -290,6 +300,7 @@ const quizData = [
 		id: 'gameofthrones',
 		questions: [
 			{
+				qIndex: 0,
 				question: "Who was Jon Snow's father?",
 				correctAns: 'Rhaegar Targaryen',
 				multChoice: [
@@ -301,11 +312,13 @@ const quizData = [
 				],
 			},
 			{
+				qIndex: 1,
 				question: 'To which house was Maester Aemon born?',
 				correctAns: 'Targaryen',
 				multChoice: ['Targaryen', 'Tyrell', 'Hightower', 'Dayne', 'Stark'],
 			},
 			{
+				qIndex: 2,
 				question: "What was the actual name of the 'Mad King'?",
 				correctAns: 'Aerys II',
 				multChoice: [
@@ -317,6 +330,7 @@ const quizData = [
 				],
 			},
 			{
+				qIndex: 3,
 				question: 'In which town is the Citadel where Maesters train?',
 				correctAns: 'Oldtown',
 				multChoice: [
@@ -328,6 +342,7 @@ const quizData = [
 				],
 			},
 			{
+				qIndex: 4,
 				question:
 					"What does a Valyrian Steel link signify on a Maester's chain?",
 				correctAns: 'Higher Mysteries',
@@ -340,6 +355,7 @@ const quizData = [
 				],
 			},
 			{
+				qIndex: 5,
 				question:
 					'Who did Robb Stark execute for killing the Lannister prisoners?',
 				correctAns: 'Rickard Karstark',
@@ -352,11 +368,13 @@ const quizData = [
 				],
 			},
 			{
+				qIndex: 6,
 				question: 'What is the name of the sword of House Dayne?',
 				correctAns: 'Dawn',
 				multChoice: ['Heartsbane', 'Ice', 'Dawn', 'Dark Sister', 'Blackfyre'],
 			},
 			{
+				qIndex: 7,
 				question: 'Which is not an aspect of The Seven?',
 				correctAns: 'The Child',
 				multChoice: [
@@ -368,11 +386,13 @@ const quizData = [
 				],
 			},
 			{
+				qIndex: 8,
 				question: 'Where are people infected with Greyscale sent?',
 				correctAns: 'Valyria',
 				multChoice: ['Valyria', 'Braavos', 'Astapor', 'Lhazar', 'Qarth'],
 			},
 			{
+				qIndex: 9,
 				question: "What was the name of Aegon the Conqueror's dragon?",
 				correctAns: 'Balerion',
 				multChoice: ['Seasmoke', 'Meraxes', 'Dreamfyre', 'Balerion', 'Vhagar'],
@@ -386,6 +406,7 @@ const quizData = [
 		id: 'mcu',
 		questions: [
 			{
+				qIndex: 0,
 				question: 'Which high school does Peter Parker attend?',
 				correctAns: 'Midtown School of Science and Technology',
 				multChoice: [
@@ -397,6 +418,7 @@ const quizData = [
 				],
 			},
 			{
+				qIndex: 1,
 				question:
 					'At the end of Iron Man, what material is the Iron Man suit made from?',
 				correctAns: 'Gold-Titanium Alloy',
@@ -409,6 +431,7 @@ const quizData = [
 				],
 			},
 			{
+				qIndex: 2,
 				question: 'What New Mexico town does Thor arrive in?',
 				correctAns: 'Puente Antiguo',
 				multChoice: [
@@ -420,6 +443,7 @@ const quizData = [
 				],
 			},
 			{
+				qIndex: 3,
 				question:
 					'What was the name of the boat on which Captain America first fights Batroc?',
 				correctAns: 'Lemurian Star',
@@ -432,11 +456,13 @@ const quizData = [
 				],
 			},
 			{
+				qIndex: 4,
 				question: 'What is the name of the Kree homeworld?',
 				correctAns: 'Hala',
 				multChoice: ['Contraxia', 'Alfheim', 'Morag', 'Hala', 'Spartax'],
 			},
 			{
+				qIndex: 5,
 				question:
 					'What is the name of the prison that the Guardians of the Galaxy escape from?',
 				correctAns: 'The Kyln',
@@ -449,6 +475,7 @@ const quizData = [
 				],
 			},
 			{
+				qIndex: 6,
 				question: 'In which order does Thanos assemble the Infinity Stones?',
 				correctAns: 'Power-Space-Reality-Soul-Time-Mind',
 				multChoice: [
@@ -460,18 +487,21 @@ const quizData = [
 				],
 			},
 			{
+				qIndex: 7,
 				question:
 					"What is the name of the Dora Milaje who helped Bucky Barnes remove Hydra's programming?",
 				correctAns: 'Ayo',
 				multChoice: ['Nomble', 'Ayo', 'Yama', 'Okoye', 'Xoliswa'],
 			},
 			{
+				qIndex: 8,
 				question:
 					'In how many Marvel Cinematic Universe films has Nick Fury appeared?',
 				correctAns: '11',
 				multChoice: ['4', '8', '19', '11', '14'],
 			},
 			{
+				qIndex: 9,
 				question:
 					"In Black Widow, Yelena mistakenly calls Alexei by which superhero's name?",
 				correctAns: 'Crimson Dynamo',
