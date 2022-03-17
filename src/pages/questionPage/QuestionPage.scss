@@ -2,8 +2,10 @@
   margin: 0 10px 0;
 }
 
-.question-block {
-  margin-bottom: 50px;
+.questions {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 #title {

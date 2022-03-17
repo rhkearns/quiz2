@@ -42,9 +42,7 @@ const QuestionPage = () => {
 			<h1 id="title">{category.title}</h1>
 			<div className="questions">
 				{category.questions?.map(question => (
-					<div className="question-block">
 						<QuestionBlock question={question} />
-					</div>
 				))}
 			</div>
 		</div>
