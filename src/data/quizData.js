@@ -522,6 +522,7 @@ const quizData = [
 		id: 'd&d',
 		questions: [
 			{
+				qIndex: 0,
 				question: 'When can monsters use Legendary Actions?',
 				correctAns: "At the end of any other creature's turn",
 				multChoice: [
@@ -533,11 +534,13 @@ const quizData = [
 				],
 			},
 			{
+				qIndex: 1,
 				question: 'Unicorns are immune to which damage type?',
 				correctAns: 'Poison',
 				multChoice: ['Poison', 'Fire', 'Necrotic', 'Cold', 'Acid'],
 			},
 			{
+				qIndex: 2,
 				question:
 					'Which of the following is not a Metamagic option for Sorcerers?',
 				correctAns: 'Beguiling Spell',
@@ -550,17 +553,20 @@ const quizData = [
 				],
 			},
 			{
+				qIndex: 3,
 				question:
 					'At what spell slot level does Dispel Magic work automatically?',
 				correctAns: '4',
 				multChoice: ['8', '5', '4', '2', '7'],
 			},
 			{
+				qIndex: 4,
 				question: 'At what age do Tortles reach adulthood?',
 				correctAns: '15',
 				multChoice: ['27', '21', '15', '5', '39'],
 			},
 			{
+				qIndex: 5,
 				question:
 					'What effect does 4 levels of Exhaustion have on a character?',
 				correctAns: 'Hit Point Maximum Halved',
@@ -573,16 +579,19 @@ const quizData = [
 				],
 			},
 			{
+				qIndex: 6,
 				question: 'How many wildshapes can a Druid use per day at level 18?',
 				correctAns: '2',
 				multChoice: ['4', '2', '9', '18', '12'],
 			},
 			{
+				qIndex: 7,
 				question: 'At what level can a Cleric use Divine Intervention?',
 				correctAns: '10',
 				multChoice: ['5', '18', '15', '10', '20'],
 			},
 			{
+				qIndex: 8,
 				question: 'What bonus does 3/4 cover give?',
 				correctAns: '+5 bonus to AC and Dexterity Saving Throws',
 				multChoice: [
@@ -594,6 +603,7 @@ const quizData = [
 				],
 			},
 			{
+				qIndex: 9,
 				question:
 					"Which card from the Deck of Many Things has this effect: 'Every magic item you wear or carry disintegrates. Artifacts in your possession aren't destroyed but do vanish?",
 				correctAns: 'Talons',
