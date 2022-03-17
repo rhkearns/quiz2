@@ -8,24 +8,10 @@ const QuestionPage = () => {
 	const [category, setCategory] = useState({});
 	const { id } = useParams();
 	const [correctAnswers, setCorrectAnswers] = useState([]);
-	// const [guesses, setGuesses] = useState([
-	// 	'',
-	// 	'',
-	// 	'',
-	// 	'',
-	// 	'',
-	// 	'',
-	// 	'',
-	// 	'',
-	// 	'',
-	// 	'',
-	// ]);
 
-	// const handleSelectAnswer = (selection, idx) => {
-	// 	setGuesses(...guesses, guesses.splice(idx, 1, selection));
-	// };
-
-	const handleCheckAnswers = () => {};
+  const handleCheckAnswers = () => {
+    
+  };
 
 	useEffect(() => {
 		const selectedCategory = quizData.find(category => category.id === id);
@@ -38,11 +24,14 @@ const QuestionPage = () => {
 	}, []);
 
 	return (
-		<div className='question-page'>
+		<div className="question-page">
 			<h1 id="title">{category.title}</h1>
 			<div className="questions">
 				{category.questions?.map(question => (
-						<QuestionBlock question={question} />
+					<QuestionBlock
+						question={question}
+						handleCheckAnswers={handleCheckAnswers}
+					/>
 				))}
 			</div>
 		</div>

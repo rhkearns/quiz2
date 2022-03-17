@@ -6,6 +6,7 @@ const quizData = [
 		id: 'harrypotter',
 		questions: [
 			{
+				qIndex: 0,
 				question: "What do Hermione's parents do for a living?",
 				correctAns: 'Dentists',
 				multChoice: [
@@ -17,22 +18,26 @@ const quizData = [
 				],
 			},
 			{
+				qIndex: 1,
 				question:
 					'Which of these was not a monster that Harry faced in the maze in the Third Task of the Triwizard Tournament?',
 				correctAns: 'Grindylow',
 				multChoice: ['Sphinx', 'Skrewt', 'Boggart', 'Grindylow', 'Spider'],
 			},
 			{
+				qIndex: 2,
 				question: "What is Percy's Owl's Name?",
 				correctAns: 'Hermes',
 				multChoice: ['Hermes', 'Errol', 'Abraxas', 'Arnold', 'Roonil'],
 			},
 			{
+				qIndex: 3,
 				question: "What form was Ernie Macmillan's Patronus?",
 				correctAns: 'Boar',
 				multChoice: ['Hare', 'Otter', 'Thestral', 'Rat', 'Boar'],
 			},
 			{
+				qIndex: 4,
 				question:
 					'Who of the following was never a member of the Order of the Phoenix?',
 				correctAns: 'Horace Slughorn',
@@ -45,6 +50,7 @@ const quizData = [
 				],
 			},
 			{
+				qIndex: 5,
 				question: "What is Dean Thomas' favorite Football (soccer) team?",
 				correctAns: 'West Ham United',
 				multChoice: [
@@ -56,11 +62,13 @@ const quizData = [
 				],
 			},
 			{
+				qIndex: 6,
 				question: "How many O.W.L.'s did Hermione receive?",
 				correctAns: '10',
 				multChoice: ['11', '14', '13', '10', '21'],
 			},
 			{
+				qIndex: 7,
 				question: 'What street does Severus Snape live on?',
 				correctAns: "Spinner's End",
 				multChoice: [
@@ -72,6 +80,7 @@ const quizData = [
 				],
 			},
 			{
+				qIndex: 8,
 				question:
 					'What model broomstick does Ron receive in Order of the Phoenix?',
 				correctAns: 'Cleansweep Eleven',
@@ -84,6 +93,7 @@ const quizData = [
 				],
 			},
 			{
+				qIndex: 9,
 				question: 'How many staircases are there at Hogwarts?',
 				correctAns: '142',
 				multChoice: ['68', '394', '188', '208', '142'],
@@ -97,6 +107,7 @@ const quizData = [
 		id: 'starwars',
 		questions: [
 			{
+				qIndex: 0,
 				question: 'What model is the Millennium Falcon?',
 				correctAns: 'Corellian YT-1300f Light Freighter',
 				multChoice: [
@@ -108,21 +119,25 @@ const quizData = [
 				],
 			},
 			{
+				qIndex: 1,
 				question: 'What is the name of the Wookie home planet?',
 				correctAns: 'Kashyyyk',
 				multChoice: ['Endor', 'Kashyyyk', 'Ilum', 'Dathomir', 'Crait'],
 			},
 			{
+				qIndex: 2,
 				question: 'What species is Ahsoka Tano?',
 				correctAns: 'Togruta',
 				multChoice: ['Togruta', 'Zabrak', "Twi'lek", 'Rodian', 'Iktochi'],
 			},
 			{
+				qIndex: 3,
 				question: 'On which planet did Darth Vader establish his base?',
 				correctAns: 'Mustafar',
 				multChoice: ['Crait', 'Jedha', 'Naboo', 'Utapau', 'Mustafar'],
 			},
 			{
+				qIndex: 4,
 				question:
 					'According to Dexter Jettser in Attack of the Clones, what do the analysis droids at the Jedi temple focus on?',
 				correctAns: 'Symbols',
@@ -135,29 +150,34 @@ const quizData = [
 				],
 			},
 			{
+				qIndex: 5,
 				question:
 					"What cell number is Leah Organa in when Luke and Han rescue her from the Death Star (Hint: It is also Finn's Stormtrooper ID number)?",
 				correctAns: '2187',
 				multChoice: ['7567', '5555', '2187', '2224', '1409'],
 			},
 			{
+				qIndex: 6,
 				question: "What is Luke Skywalker's callsign at the Battle of Yavin?",
 				correctAns: 'Red-5',
 				multChoice: ['Blue-2', 'Red-5', 'Green-7', 'Black-Leader', 'Gold-1'],
 			},
 			{
+				qIndex: 7,
 				question:
 					'Which was not a ship taking part in the Rebel attack over Endor?',
 				correctAns: 'K-Wing',
 				multChoice: ['X-Wing', 'Y-Wing', 'B-Wing', 'A-Wing', 'K-Wing'],
 			},
 			{
+				qIndex: 8,
 				question:
 					'What creature do Tusken Raiders ride in the deserts of Tatooine?',
 				correctAns: 'Bantha',
 				multChoice: ['Tauntaun', 'Bantha', 'Acklay', 'Grinjer', 'Boga'],
 			},
 			{
+				qIndex: 9,
 				question: "Which Sith Lord created the 'Rule of Two'?",
 				correctAns: 'Darth Plagueis',
 				multChoice: [
