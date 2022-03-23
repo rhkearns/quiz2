@@ -8,10 +8,7 @@ const QuestionPage = () => {
 	const [category, setCategory] = useState({});
 	const { id } = useParams();
 	const [correctAnswers, setCorrectAnswers] = useState([]);
-
-  const handleCheckAnswers = () => {
-    
-  };
+	const [score, setScore] = useState(0)
 
 	useEffect(() => {
 		const selectedCategory = quizData.find(category => category.id === id);
@@ -30,8 +27,8 @@ const QuestionPage = () => {
 				{category.questions?.map(question => (
 					<QuestionBlock
             question={question}
-            key={question.qIndex}
-						handleCheckAnswers={handleCheckAnswers}
+						key={question.qIndex}
+						setScore={setScore}
 					/>
 				))}
 			</div>
