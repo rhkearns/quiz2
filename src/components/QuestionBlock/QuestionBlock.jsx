@@ -4,15 +4,18 @@ import AnswerChoices from '../answerChoices/AnswerChoices';
 
 const QuestionBlock = ({ question }) => {
 	const [style, setStyle] = useState("choice")
-	const [answerCorrect, setAnswerCorrect] = useState()
+	const [answerCorrect, setAnswerCorrect] = useState('none')
+	const [selectedAns, setSelectedAns] = useState('')
+	const correctStyle = "choice correct"
+	const wrongStyle = "choice wrong"
+	const basicStyle = "choice"
 
 	const handleCheckAnswer = (choice, idx) => {
+		setSelectedAns(choice)
 		if (choice === question.correctAns) {
 			console.log('here');
-			setStyle("choice correct")
 			setAnswerCorrect(true)
 		} else {
-			setStyle("choice wrong")
 			setAnswerCorrect(false)
 		}
   };
@@ -25,6 +28,11 @@ const QuestionBlock = ({ question }) => {
 				handleCheckAnswer={handleCheckAnswer}
 				style={style}
 				answerCorrect={answerCorrect}
+				correctAns={question.correctAns}
+				correctStyle={correctStyle}
+				wrongStyle={wrongStyle}
+				basicStyle={basicStyle}
+				selectedAns={selectedAns}
 			/>
 		</div>
 	);
