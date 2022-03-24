@@ -12,16 +12,6 @@ const AnswerChoices = ({ choices, handleCheckAnswer, style }) => {
 					handleCheckAnswer={handleCheckAnswer}
 					idx={choices.indexOf(choice)}
 				/>
-
-				// <div className="choice-block">
-				// 	<p
-				// 		className={style}
-				// 		id={choices.indexOf(choice)}
-				// 		onClick={() => handleCheckAnswer(choice, choices.indexOf(choice))}
-				// 	>
-				// 		{choice}
-				// 	</p>
-				// </div>
 			))}
 		</div>
 	);

@@ -13,8 +13,16 @@
 
 .correct {
   background-color: green;
+
+  &:hover {
+    background-color: darkgreen;
+  }
 }
 
 .wrong {
   background-color: red;
+
+  &:hover {
+    background-color: darkred;
+  }
 }
