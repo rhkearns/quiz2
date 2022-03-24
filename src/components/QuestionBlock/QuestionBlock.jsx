@@ -3,7 +3,6 @@ import './QuestionBlock.scss';
 import AnswerChoices from '../answerChoices/AnswerChoices';
 
 const QuestionBlock = ({ question }) => {
-	const [style, setStyle] = useState("choice")
 	const [answerCorrect, setAnswerCorrect] = useState('none')
 	const [selectedAns, setSelectedAns] = useState('')
 	const correctStyle = "choice correct"
@@ -26,7 +25,6 @@ const QuestionBlock = ({ question }) => {
 			<AnswerChoices
 				choices={question.multChoice}
 				handleCheckAnswer={handleCheckAnswer}
-				style={style}
 				answerCorrect={answerCorrect}
 				correctAns={question.correctAns}
 				correctStyle={correctStyle}
