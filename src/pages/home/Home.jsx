@@ -8,7 +8,7 @@ const Home = () => {
 	return (
 		<>
 			<div className="header">
-				<h1 id="title">Nerd Quiz</h1>
+				<h1 id="title">Quiz for the Nerds</h1>
 				<h2 id="message">
 					Test your knowledge of the biggest nerdy franchises
 				</h2>
