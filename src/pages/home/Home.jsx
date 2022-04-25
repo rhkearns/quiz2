@@ -5,8 +5,6 @@ import quizData from '../../data/quizData';
 import CategoryCard from '../../components/categoryCard/CategoryCard';
 
 const Home = () => {
-	// console.log(quizData);
-
 	return (
 		<>
 			<div className="header">

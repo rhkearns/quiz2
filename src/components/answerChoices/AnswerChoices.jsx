@@ -5,14 +5,13 @@ import Choice from '../Choice/Choice';
 const AnswerChoices = ({
 	choices,
 	handleCheckAnswer,
-	style,
 	answerCorrect,
 	correctAns,
 	correctStyle,
 	wrongStyle,
 	basicStyle,
 	selectedAns,
-	canClick
+	canClick,
 }) => {
 	return (
 		<div className="choice-block">

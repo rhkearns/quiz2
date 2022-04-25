@@ -1,15 +1,7 @@
 import React from 'react';
 import './Choice.scss';
 
-const Choice = ({
-	choice,
-	style,
-	handleCheckAnswer,
-	key,
-	answerCorrect,
-	correctAns,
-	canClick,
-}) => {
+const Choice = ({ choice, style, handleCheckAnswer, key, canClick }) => {
 	return (
 		<p
 			className={style}
