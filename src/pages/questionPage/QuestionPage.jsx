@@ -8,7 +8,6 @@ const QuestionPage = () => {
 	const [category, setCategory] = useState({});
 	const { id } = useParams();
 	const [score, setScore] = useState(0)
-	const [selected, setSelected] = useState(false)
 
 	useEffect(() => {
 		const selectedCategory = quizData.find(category => category.id === id);
@@ -24,8 +23,6 @@ const QuestionPage = () => {
             question={question}
 						key={question.qIndex}
 						setScore={setScore}
-						selected={selected}
-						setSelected={setSelected}
 					/>
 				))}
 			</div>

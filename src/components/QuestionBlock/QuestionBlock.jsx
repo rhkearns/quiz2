@@ -5,6 +5,7 @@ import AnswerChoices from '../answerChoices/AnswerChoices';
 const QuestionBlock = ({ question }) => {
 	const [answerCorrect, setAnswerCorrect] = useState('none')
 	const [selectedAns, setSelectedAns] = useState('')
+	const [canClick, setCanClick] = useState(true)
 	const correctStyle = "choice correct"
 	const wrongStyle = "choice wrong"
 	const basicStyle = "choice"
@@ -14,8 +15,10 @@ const QuestionBlock = ({ question }) => {
 		if (choice === question.correctAns) {
 			console.log('here');
 			setAnswerCorrect(true)
+			setCanClick(false)
 		} else {
 			setAnswerCorrect(false)
+			setCanClick(false)
 		}
   };
 	
@@ -31,6 +34,7 @@ const QuestionBlock = ({ question }) => {
 				wrongStyle={wrongStyle}
 				basicStyle={basicStyle}
 				selectedAns={selectedAns}
+				canClick={canClick}
 			/>
 		</div>
 	);

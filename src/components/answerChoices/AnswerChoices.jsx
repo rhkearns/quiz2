@@ -12,6 +12,7 @@ const AnswerChoices = ({
 	wrongStyle,
 	basicStyle,
 	selectedAns,
+	canClick
 }) => {
 	return (
 		<div className="choice-block">
@@ -25,6 +26,7 @@ const AnswerChoices = ({
 							key={choices.indexOf(choice)}
 							answerCorrect={answerCorrect}
 							correctAns={correctAns}
+							canClick={canClick}
 						/>
 					);
 				else if (answerCorrect === false && choice === correctAns)
@@ -36,6 +38,7 @@ const AnswerChoices = ({
 							key={choices.indexOf(choice)}
 							answerCorrect={answerCorrect}
 							correctAns={correctAns}
+							canClick={canClick}
 						/>
 					);
 				else if (answerCorrect === false && choice === selectedAns)
@@ -47,6 +50,7 @@ const AnswerChoices = ({
 							key={choices.indexOf(choice)}
 							answerCorrect={answerCorrect}
 							correctAns={correctAns}
+							canClick={canClick}
 						/>
 					);
 				else
@@ -58,6 +62,7 @@ const AnswerChoices = ({
 							key={choices.indexOf(choice)}
 							answerCorrect={answerCorrect}
 							correctAns={correctAns}
+							canClick={canClick}
 						/>
 					);
 			})}
