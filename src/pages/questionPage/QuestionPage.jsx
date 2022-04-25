@@ -31,9 +31,11 @@ const QuestionPage = () => {
 					/>
 				))}
 			</div>
-			{answerTotal === 10 &&
-				<ResultsSection score={score} />
-			}
+			<div id="results-section">
+				{/* {answerTotal === 10 && */}
+					<ResultsSection score={score} />
+				{/* } */}
+			</div>
 		</div>
 	);
 };
