@@ -7,8 +7,7 @@ const StartPage = () => {
 	const [category, setCategory] = useState({});
 	const { id } = useParams();
 	const navigate = useNavigate();
-	console.log(id);
-
+	
 	const handleStart = () => {
 		navigate(`/${id}/quiz`)
 	};
@@ -17,8 +16,6 @@ const StartPage = () => {
 		const selectedCategory = quizData.find(category => category.id === id);
 		setCategory(selectedCategory);
 	}, []);
-
-	console.log(category);
 
 	return (
 		<>
