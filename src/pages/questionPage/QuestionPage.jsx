@@ -3,19 +3,18 @@ import './QuestionPage.scss';
 import { useParams } from 'react-router-dom';
 import quizData from '../../data/quizData';
 import QuestionBlock from '../../components/QuestionBlock/QuestionBlock';
+import ResultsSection from '../../components/resultsSection/ResultsSection';
 
 const QuestionPage = () => {
 	const [category, setCategory] = useState({});
 	const { id } = useParams();
-	const [score, setScore] = useState(0)
-	const [answerTotal, setAnswerTotal] = useState(0)
+	const [score, setScore] = useState(0);
+	const [answerTotal, setAnswerTotal] = useState(0);
 
 	useEffect(() => {
 		const selectedCategory = quizData.find(category => category.id === id);
 		setCategory(selectedCategory);
 	}, []);
-
-	console.log(score, answerTotal);
 
 	return (
 		<div className="question-page">
@@ -32,6 +31,9 @@ const QuestionPage = () => {
 					/>
 				))}
 			</div>
+			{answerTotal === 10 &&
+				<ResultsSection score={score} />
+			}
 		</div>
 	);
 };
