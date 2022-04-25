@@ -8,11 +8,14 @@ const QuestionPage = () => {
 	const [category, setCategory] = useState({});
 	const { id } = useParams();
 	const [score, setScore] = useState(0)
+	const [answerTotal, setAnswerTotal] = useState(0)
 
 	useEffect(() => {
 		const selectedCategory = quizData.find(category => category.id === id);
 		setCategory(selectedCategory);
 	}, []);
+
+	console.log(score, answerTotal);
 
 	return (
 		<div className="question-page">
@@ -20,9 +23,12 @@ const QuestionPage = () => {
 			<div className="questions">
 				{category.questions?.map(question => (
 					<QuestionBlock
-            question={question}
+						question={question}
 						key={question.qIndex}
 						setScore={setScore}
+						setAnswerTotal={setAnswerTotal}
+						score={score}
+						answerTotal={answerTotal}
 					/>
 				))}
 			</div>

@@ -2,26 +2,32 @@ import React, { useState } from 'react';
 import './QuestionBlock.scss';
 import AnswerChoices from '../answerChoices/AnswerChoices';
 
-const QuestionBlock = ({ question }) => {
-	const [answerCorrect, setAnswerCorrect] = useState('none')
-	const [selectedAns, setSelectedAns] = useState('')
-	const [canClick, setCanClick] = useState(true)
-	const correctStyle = "choice correct"
-	const wrongStyle = "choice wrong"
-	const basicStyle = "choice"
+const QuestionBlock = ({
+	question,
+	score,
+	setScore,
+	answerTotal,
+	setAnswerTotal,
+}) => {
+	const [answerCorrect, setAnswerCorrect] = useState('none');
+	const [selectedAns, setSelectedAns] = useState('');
+	const [canClick, setCanClick] = useState(true);
+	const correctStyle = 'choice correct';
+	const wrongStyle = 'choice wrong';
+	const basicStyle = 'choice';
 
 	const handleCheckAnswer = (choice, idx) => {
-		setSelectedAns(choice)
+		setSelectedAns(choice);
 		if (choice === question.correctAns) {
-			console.log('here');
-			setAnswerCorrect(true)
-			setCanClick(false)
+			setAnswerCorrect(true);
+			setScore(score + 1);
 		} else {
-			setAnswerCorrect(false)
-			setCanClick(false)
+			setAnswerCorrect(false);
 		}
-  };
-	
+		setCanClick(false);
+		setAnswerTotal(answerTotal + 1);
+	};
+
 	return (
 		<div className="question-block">
 			<h1 className="question">{question.question}</h1>
